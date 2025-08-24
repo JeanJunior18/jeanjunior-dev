@@ -171,20 +171,5 @@ document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
 });
 
 
-// Parallax effect for hero section
-window.addEventListener('scroll', () => {
-  const scrolled = window.pageYOffset;
-  const hero = document.querySelector('.hero');
-  const bgAnimation = document.querySelector('.bg-animation');
-
-  if (hero) {
-    hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-  }
-
-  if (bgAnimation) {
-    bgAnimation.style.transform = `translateY(${scrolled * 0.2}px)`;
-  }
-});
-
 // Carrega os dados quando a página carrega
 document.addEventListener('DOMContentLoaded', loadData);

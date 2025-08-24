@@ -23,7 +23,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Background fixo, sem animação */
+/* Animated Background */
 .bg-animation {
   position: fixed;
   top: 0;
@@ -31,22 +31,46 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(45deg, #0a0a0a, #1a1a2e, #0a0a0a); /* ainda bonito */
+  background: linear-gradient(45deg, #0a0a0a, #1a1a2e, #0a0a0a);
+  background-size: 400% 400%;
+  animation: gradientShift 5s ease infinite;
 }
 
-/* Remove completamente o ::before e animações */
 .bg-animation::before {
-  content: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 80%, rgba(0, 102, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.1) 0%, transparent 50%);
+  animation: pulseGlow 8s ease-in-out infinite alternate;
 }
 
 @keyframes gradientShift {
-  /* pode apagar */
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes pulseGlow {
-  /* pode apagar */
-}
+  0% {
+    opacity: 0.3;
+  }
 
+  100% {
+    opacity: 0.8;
+  }
+}
 
 /* Header */
 header {
@@ -267,11 +291,8 @@ nav {
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease; /* evita problemas com 'all' */
+  transition: all 0.3s ease;
   font-weight: 500;
-  display: inline-flex; /* garante que o texto seja parte do botão */
-  align-items: center;
-  justify-content: center;
 }
 
 .category-btn.active,
