@@ -1,7 +1,3 @@
-
----
-
-````markdown
 # 📘 Documentação Interna - Site de Afiliados
 
 Arquivo de referência para edição de produtos, categorias e cursos no `products.json`.  
@@ -14,7 +10,7 @@ Arquivo de referência para edição de produtos, categorias e cursos no `produc
   "courses": [ ... ],      // Cursos recomendados
   "categories": [ ... ]    // Categorias para filtros
 }
-````
+```
 
 ---
 
@@ -103,9 +99,3 @@ Exemplo de categorias:
 * Preços: `"R$ 149,90"` ou `"Gratuito"`
 * Sempre testar links
 
-```
-
----
-
-Se você quiser, posso te gerar **um arquivo `.md` pronto para download** que você só clica e baixa. Quer que eu faça isso?
-```
