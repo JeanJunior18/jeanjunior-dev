@@ -1,0 +1,73 @@
+{
+  "tools": [
+    {
+      "id": "vscode",
+      "name": "Visual Studio Code",
+      "categoria": "ide",
+      "badge": "Editor",
+      "description": "O editor de código mais popular entre desenvolvedores. Gratuito, extensível e com uma comunidade incrível.",
+      "price": "Gratuito",
+      "link": "https://code.visualstudio.com/",
+      "textLink": "Download Gratuito"
+    },
+    {
+      "id": "yama1",
+      "name": "Cadeira Ergonômica Yama1 THUNDERX3",
+      "categoria": "hardware",
+      "badge": "Conforto",
+      "description": "É a cadeira que uso no meu setup. O apoio lombar ajuda muito a aguentar as longas horas programando e estudando. Conforto faz diferença no foco e na saúde.",
+      "price": "Preço no link",
+      "link": "https://amzn.to/4oM0iKB",
+      "textLink": "Ver ofertas"
+    },
+    {
+      "id": "fifine-am8",
+      "name": "Microfone FIFINE AM8",
+      "categoria": "hardware",
+      "badge": "Amazon",
+      "description": "Uso esse microfone nas minhas gravações. O áudio sai limpo, sem precisar de muito ajuste. Perfeito pra quem cria conteúdo ou só quer boa qualidade sem complicação.",
+      "price": "Preço no link",
+      "link": "https://amzn.to/476keRX",
+      "textLink": "Comprar na Amazon"
+    },
+    {
+      "id": "pedestal-microfone-articulado",
+      "name": "Pedestal Suporte Articulado para Microfone",
+      "categoria": "acessorios",
+      "badge": "Amazon",
+      "description": "Esse é o pedestal que uso junto com o microfone. O braço articulado deixa tudo mais prático, ajusto rápido na posição certa e ganho espaço na mesa.",
+      "price": "Preço no link",
+      "link": "https://amzn.to/477h00w",
+      "textLink": "Comprar na Amazon"
+    },
+    {
+      "id": "edifier-r1000t4",
+      "name": "Monitor de Áudio Edifier R1000T4",
+      "categoria": "hardware",
+      "badge": "Músico",
+      "description": "Essas são as caixas que uso todo dia. Como músico, curto a qualidade de monitor de áudio profissional: cristalinas, com graves firmes e médios bem definidos. Uso tanto pra programar quanto pra ouvir música e produzir.",
+      "price": "Preço no link",
+      "link": "https://amzn.to/47J68Gk",
+      "textLink": "Comprar na Amazon"
+    }
+  ],
+  "courses": [],
+  "categories": [
+    {
+      "id": "all",
+      "name": "Todas"
+    },
+    {
+      "id": "ide",
+      "name": "IDEs"
+    },
+    {
+      "id": "hardware",
+      "name": "Hardware"
+    },
+    {
+      "id": "acessorios",
+      "name": "Acessórios"
+    }
+  ]
+}
