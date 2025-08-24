@@ -7,15 +7,21 @@
   <title>Jean Junior Dev - Recursos e Ferramentas</title>
   <meta name="description"
     content="Descubra as melhores ferramentas e recourses para programação recomendados pelo Jean Junior Dev">
-  <link rel="pricennect" href="https://fonts.googleapis.com">
-  <link rel="pricennect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
-  <link rel="manifest" href="public/site.webmanifest">
+  <!-- versão de cache bust -->
+  <script>
+    const VERSION = "20250824"; // 👈 troca aqui quando quiser forçar refresh
+    document.write(`
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap&v=${VERSION}" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css?v=${VERSION}">
+      <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png?v=${VERSION}">
+      <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png?v=${VERSION}">
+      <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png?v=${VERSION}">
+      <link rel="manifest" href="public/site.webmanifest?v=${VERSION}">
+    `);
+  </script>
 </head>
 
 <body>
@@ -44,37 +50,22 @@
       <a href="https://www.youtube.com/@jeanjunior-dev" id="canal-link" class="cta-button" target="_blank">
         🚀 Visite meu Canal
       </a>
-
     </section>
 
     <section id="tools" class="section">
       <h2 class="animate-on-scroll">🛠️ Ferramentas Essenciais</h2>
-
       <div class="categories" id="categories-container">
         <!-- categories carregadas dinamicamente -->
       </div>
-
       <div class="products-grid" id="tools-grid">
         <!-- Produtos carregados dinamicamente -->
       </div>
     </section>
 
-    <!-- <section id="courses" class="section">
-      <h2 class="animate-on-scroll">📚 Cursos Recomendados</h2>
-      <p>
-        Esses cursos foram escolhidos porque realmente entregam valor e podem acelerar sua carreira como dev.
-        Alguns links são de afiliado (me ajudam sem custo extra pra você), outros são apenas sugestões que considero
-        importantes compartilhar.
-      </p>
-
-
-      <div class="products-grid" id="courses-grid">
-      </div>
-    </section> -->
-
     <section id="sobre" class="section">
       <div class="about animate-on-scroll">
-        <img id="foto-sobre" src="https://media.licdn.com/dms/image/v2/D4D03AQFA_o41cffgKA/profile-displayphoto-shrink_400_400/B4DZav0jDBHEAk-/0/1746706510696?e=1758758400&v=beta&t=A75ih8FVJz73MXB4YxuteQpla5VuMpBBdoFPutsZ5kU" alt="Jean Junior" />
+        <img id="foto-sobre" src="https://media.licdn.com/dms/image/v2/D4D03AQFA_o41cffgKA/profile-displayphoto-shrink_400_400/B4DZav0jDBHEAk-/0/1746706510696?e=1758758400&v=beta&t=A75ih8FVJz73MXB4YxuteQpla5VuMpBBdoFPutsZ5kU"
+          alt="Jean Junior" />
         <h2 id="name-sobre">Sobre o Jean Junior Dev</h2>
         <p id="description-sobre-1">
           Sou engenheiro de software e criei este espaço para reunir recursos que considero úteis para qualquer dev, do
@@ -93,24 +84,13 @@
   <footer>
     <div class="social-links">
       <a href="https://www.youtube.com/@jeanjunior-dev" id="youtube-link" class="social-link" target="_blank">
-        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-          <path
-            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-        </svg>
+        <!-- youtube svg -->
       </a>
-
       <a href="https://github.com/JeanJunior18" id="github-link" class="social-link" target="_blank">
-        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-          <path
-            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-        </svg>
+        <!-- github svg -->
       </a>
-
       <a href="https://www.linkedin.com/in/jean-charles-junior/" id="linkedin-link" class="social-link" target="_blank">
-        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-          <path
-            d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0zM7.082 20.452H3.549V9h3.533v11.452zM5.315 7.517c-1.132 0-2.049-.923-2.049-2.062 0-1.138.916-2.062 2.049-2.062s2.05.924 2.05 2.062c0 1.139-.918 2.062-2.05 2.062zM20.452 20.452h-3.533v-5.994c0-1.43-.026-3.27-1.992-3.27-1.994 0-2.3 1.556-2.3 3.166v6.098h-3.533V9h3.392v1.561h.048c.472-.894 1.627-1.834 3.348-1.834 3.578 0 4.237 2.356 4.237 5.421v6.704z" />
-        </svg>
+        <!-- linkedin svg -->
       </a>
     </div>
 
@@ -119,11 +99,11 @@
       💡 Alguns links deste site podem ser de afiliado. Outros são apenas recomendações sem nenhum ganho financeiro.
       Em ambos os casos, a ideia é compartilhar o que realmente pode ajudar você como dev.
     </p>
-
-
   </footer>
 
-  <script src="./index.js"></script>
+  <script>
+    document.write(`<script src="./index.js?v=${VERSION}"><\/script>`);
+  </script>
 </body>
 
 </html>

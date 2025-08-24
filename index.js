@@ -4,7 +4,7 @@ let currentCategory = 'all';
 // Carrega os dados do arquivo JSON
 async function loadData() {
   try {
-    const response = await fetch('./products.json');
+    const response = await fetch("./products.json?v=" + VERSION, { cache: "no-store" });
     const data = await response.json();
 
     // Carrega categories
